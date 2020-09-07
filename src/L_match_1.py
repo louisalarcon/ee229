@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from si_prefix import si_format
 import numpy as np
 
+# https://github.com/louisalarcon/ee229/blob/master/src/ngspice_link.py
 import ngspice_link as ngl
 
 # define the center frequency
