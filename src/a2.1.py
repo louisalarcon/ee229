@@ -45,6 +45,7 @@ def to_VdB(sig_in):
 
 def simple_fft(sig, N, fs, tones):
     # scale to the fundamental
+    # set tones = 2 for 2-tone inputs
     sig_freq = np.fft.rfft(sig)/(float(N/2)*(max(sig)/tones))
     mag_sig = np.abs(sig_freq)
     f = np.fft.rfftfreq(N, d=1./fs)
